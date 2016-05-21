@@ -1,13 +1,16 @@
 <h1><img src="./reel_logo.png" height=70 /> Reel</h1>
 
-To start your Phoenix app:
+## Development
+**First and foremost, styles must be consistent and standard.  _Please_ follow [this style guide!](https://github.com/niftyn8/elixir_style_guide)**
 
-  * Install dependencies with `mix deps.get`
-  * Start Phoenix endpoint with `mix phoenix.server`
+Make sure that you have [Elixir](http://elixir-lang.org/install.html) and [Phoenix](http://www.phoenixframework.org/docs/installation) installed and up to date.
 
-Now you can visit [`localhost:4000`](http://localhost:4000) from your browser.
+```
+mix deps.get
+mix phoenix.server
+```
 
-Ready to run in production? Please [check our deployment guides](http://www.phoenixframework.org/docs/deployment).
+The [GraphiQL](https://github.com/graphql/graphiql) browser should now be available at [`localhost:4000/graphiql`](http://localhost:4000/graphiql)
 
 ## Learn more
 
