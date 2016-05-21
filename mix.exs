@@ -17,7 +17,8 @@ defmodule Reel.Mixfile do
   # Type `mix help compile.app` for more information.
   def application do
     [mod: {Reel, []},
-     applications: [:phoenix, :phoenix_html, :cowboy, :logger, :gettext]]
+     applications: [:phoenix, :phoenix_html, :cowboy, :logger, :gettext,
+                    :absinthe_plug]]
   end
 
   # Specifies which paths to compile per environment.
@@ -32,6 +33,7 @@ defmodule Reel.Mixfile do
      {:phoenix_html, "~> 2.4"},
      {:phoenix_live_reload, "~> 1.0", only: :dev},
      {:gettext, "~> 0.9"},
-     {:cowboy, "~> 1.0"}]
+     {:cowboy, "~> 1.0"},
+     {:absinthe_plug, "~> 1.1"}]
   end
 end

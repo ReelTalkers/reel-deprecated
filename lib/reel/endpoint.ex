@@ -35,5 +35,10 @@ defmodule Reel.Endpoint do
     key: "_reel_key",
     signing_salt: "PDgvaNY8"
 
-  plug Reel.Router
+  cond do
+    Mix.env == :dev ->
+      plug Absinthe.Plug.GraphiQL, schema: Reel.Schema
+    true ->
+      plug Absinthe.Plug, schema: Reel.Schema
+  end
 end
