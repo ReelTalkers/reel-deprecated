@@ -6,7 +6,7 @@ defmodule Reel.Mixfile do
      version: "0.0.1",
      elixir: "~> 1.0",
      elixirc_paths: elixirc_paths(Mix.env),
-     compilers: [:phoenix, :gettext] ++ Mix.compilers,
+     compilers: [:phoenix] ++ Mix.compilers,
      build_embedded: Mix.env == :prod,
      start_permanent: Mix.env == :prod,
      deps: deps]
@@ -17,8 +17,7 @@ defmodule Reel.Mixfile do
   # Type `mix help compile.app` for more information.
   def application do
     [mod: {Reel, []},
-     applications: [:phoenix, :phoenix_html, :cowboy, :logger, :gettext,
-                    :absinthe_plug]]
+     applications: [:phoenix, :cowboy, :logger, :absinthe_plug]]
   end
 
   # Specifies which paths to compile per environment.
@@ -30,9 +29,7 @@ defmodule Reel.Mixfile do
   # Type `mix help deps` for examples and options.
   defp deps do
     [{:phoenix, "~> 1.1.4"},
-     {:phoenix_html, "~> 2.4"},
      {:phoenix_live_reload, "~> 1.0", only: :dev},
-     {:gettext, "~> 0.9"},
      {:cowboy, "~> 1.0"},
      {:absinthe_plug, "~> 1.1"}]
   end
