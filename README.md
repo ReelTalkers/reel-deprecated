@@ -1,4 +1,4 @@
-# Reel
+<h1><img src="./reel_logo.png" height=70 /> Reel</h1>
 
 To start your Phoenix app:
 
