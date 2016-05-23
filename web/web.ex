@@ -18,13 +18,11 @@ defmodule Reel.Web do
 
   def model do
     quote do
-      # Define common model functionality
-    end
-  end
+      use Ecto.Schema
 
-  def controller do
-    quote do
-      use Phoenix.Controller
+      import Ecto
+      import Ecto.Changeset
+      import Ecto.Query, only: [from: 1, from: 2]
     end
   end
 
